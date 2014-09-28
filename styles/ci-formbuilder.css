@@ -1,0 +1,67 @@
+/* 
+	Class Name: CI Form Builder
+   	Class URI: http://cideator.com/php/classes/ci-formbuilder
+   	Description: a plugin to create awesomeness and spread joy
+   	Version: 1.0.0
+   	Author: Farhan Wazir
+	Author Email: seejee1@gmail.com
+   	Author URI: http://cideator.com
+   	License: GNU General Public License, version 2 (GPL2)
+ 
+ 	Copyright 2014 Farhan Wazir (email : seejee1@gmail.com)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, as 
+    published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+body{
+	background: #f1f1f1;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+.wrap{
+	width:70%;
+	margin:0 auto;
+}
+.ci-form{
+	max-width:100%;
+}
+ 
+.form-row{
+	background:#fff;
+	padding:10px;
+	border-left:solid 4px #09F;
+	margin:5px auto;
+}
+.form-row.even{
+	/*background:#fcfcfc;*/
+}
+.form-row:hover{
+	background:#FBFEFF;
+}
+.ci-label{
+	min-width:120px;
+	padding:10px;
+	display:inline-block;
+	font-weight:bold;
+}
+.checkbox-row label > span.ci-label, .radio-row label > span.ci-label{
+	min-width:inherit !important;
+	padding:0;
+	margin-right:10px;
+	font-weight:normal;
+}
+.ci-desc{
+	margin:0 20px;
+	font-size:90%;
+	color:#999;
+}
