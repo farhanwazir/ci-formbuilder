@@ -45,13 +45,13 @@ function formPrint(){
 	echo '
 	   	<div class="wrap">
 		<h1>CI Form Builder PHP Class</h1>
-	   This is Creative Ideator Form Builder, it generates form with less code and programmer friendly, <strong>No HTML involve just one code for each field</strong>. For demo: <a href="http://cideator.com/php/classes/ci-formbuilder">DEMO</a><br /><br />
+	   This is Creative Ideator Form Builder, it generates form with less code and programmer friendly, <strong>No HTML involve just one code for each field</strong>. For demo: <a href="http://cideator.com/php/classes/ci-formbuilder">DEMO</a> and for download link <a href="https://github.com/farhanwazir/ci-formbuilder">DOWNLOAD</a><br /><br />
 
 Form builder is a best choice for Wordpress Developers. You can generate many settings, theme setting and frontend forms with less and friendly code. For help you can see source of index.php, it will help you more.
 <br />
 <h2>Usage:</h2>
 Step 1: Just place ci-classes folder in your code.<br />
-Step 2: Add line in your code <strong>require "ci-formbuilder.php";</strong><br />
+Step 2: Add line in your code <strong>require file in php "ci-classes/ci-formbuilder.php";</strong><br />
 Step 3: $ci_form = new ciformbuilder();
 <br /><br />
 Now start making form by class API. Below is EXAMPLE';

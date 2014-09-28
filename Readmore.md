@@ -6,7 +6,7 @@ Form builder is a best choice for Wordpress Developers. You can generate many se
 
 <h2>Usage:</h2>
 Step 1: Just place ci-classes folder in your code.
-Step 2: Add line in your code <strong>require "ci-formbuilder.php";</strong>
+Step 2: Add line in your code <strong>require file in php "ci-classes/ci-formbuilder.php";</strong>
 Step 3: $ci_form = new ciformbuilder();
 
 Now start making form by class API.
