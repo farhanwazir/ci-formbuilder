@@ -5,8 +5,11 @@ This is Creative Ideator Form Builder, it generates form with less code and prog
 Form builder is a best choice for Wordpress Developers. You can generate many settings, theme setting and frontend forms with less and friendly code. For help you can see source of index.php, it will help you more.
 
 <h2>Usage:</h2>
+
 Step 1: Just place ci-classes folder in your code.
+
 Step 2: Add line in your code <strong>require file in php "ci-classes/ci-formbuilder.php";</strong>
+
 Step 3: $ci_form = new ciformbuilder();
 
 Now start making form by class API.
