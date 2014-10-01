@@ -16,3 +16,7 @@ Now start making form by class API.
 
 
 <strong>In demo No HTML involve just one code for each field.</strong>
+
+
+<h2>Changes Log</h2>
+01/10/2014 -- Added Hidden Fields (alternate name "invisible", you can now use "hidden" or "invisilbe" keyword in field type)

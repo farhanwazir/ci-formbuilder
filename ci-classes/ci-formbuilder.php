@@ -94,6 +94,8 @@ class ciformbuilder{
 		$fields['checkbox'] = $fields['radio'];
 		$fields['select'] = '<label>{label}<select %s>{inner}</select></label>{desc}';
 		$fields['textarea'] = '<label>{label}<textarea %s>{inner}</textarea></label>{desc}';
+		$fields['hidden'] = '<input type="'.$type.'" %s />';
+		$fields['invisible'] = $fields['hidden'];
 		return (array_key_exists($type, $fields))? $fields[$type] : $fields['text'];
 	}
 	
@@ -161,6 +163,9 @@ class ciformbuilder{
 		return $this->fields[$row_id] = str_replace('{inner}',
 			'<span class="error">Field not published due to error!</span> <span class="error-desc">Arguments is not well formatted.</span>',
 			$output);
+			
+		//remove html div structure if field is hidden
+		if($args['type'] == 'hidden' || $args['type'] == 'invisible') $output = '{inner}';
 		
 		$group = (array_key_exists('group', $args))? $args['group'] : $this->default_grp;
 		//remove group key from coming arguments via this function
@@ -236,6 +241,8 @@ class ciformbuilder{
 			
 			case 'invisible':
 			case 'hidden':
+				$args['value'] = $value;
+				if(array_key_exists('helper', $args)) unset($args['helper']);
 				$output = str_replace('{inner}', $this->prepareField('hidden', $args), $output);
 				break;
 			
