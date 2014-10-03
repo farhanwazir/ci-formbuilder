@@ -195,7 +195,7 @@ class ciformbuilder{
 				$value_format = '<option value="%s" {selected} >%s</option>';
 				$nval = '';
 				
-				if(is_array($value)) foreach($value as $key => $val) $nval .= str_replace('{selected}', (!is_bool(array_search($key, $selected)))? ' selected ': '', sprintf($value_format, $key, $val));
+				if(is_array($value)) foreach($value as $key => $val) $nval .= str_replace('{selected}', is_array($selected)?(!is_bool(array_search($key, $selected)))? ' selected ': '': '', sprintf($value_format, $key, $val));
 				
 				$value = $nval;
 				
