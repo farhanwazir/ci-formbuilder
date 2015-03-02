@@ -127,9 +127,10 @@ class ciformbuilder{
 	}
 	function createGroup($args=false){
 		$id = (is_array($args) && array_key_exists('id', $args))? $args['id']: $this->default_grp;
-		$label = (is_array($args['helper']) && array_key_exists('label', $args['helper']))? $args['helper']['label'] = '<h3 class="ci-heading">'.$args['helper']['label'].'</h3>': '';
+		$helper = (array_key_exists('helper', $args))? $args['helper'] : '';
+		$label = (is_array($helper) && array_key_exists('label', $helper))? $helper['label'] = '<h3 class="ci-heading">'.$helper['label'].'</h3>': '';
 		//$desc =(is_array($args['helper']) && array_key_exists('desc',$args['helper']))? sprintf($this->desc_format, $args['helper']['desc']):'';
-		$this->groups[$id] = $this->filterHelper('group', sprintf($this->grp_format, 'id="'.$this->prefix.$id.'"'), $args['helper']);		
+		$this->groups[$id] = $this->filterHelper('group', sprintf($this->grp_format, 'id="'.$this->prefix.$id.'"'), $helper);		
 	}
 	
 	private function margeFieldsGroup(){
