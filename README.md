@@ -19,4 +19,8 @@ Now start making form by class API.
 
 
 <h2>Changes Log</h2>
+<pre>
+03/02/2015 -- Fixed field description undefined error.
+====================================================================
 01/10/2014 -- Added Hidden Fields (alternate name "invisible", you can now use "hidden" or "invisilbe" keyword in field type)
+</pre>
